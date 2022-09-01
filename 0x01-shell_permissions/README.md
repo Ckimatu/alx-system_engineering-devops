@@ -17,3 +17,4 @@ script that sets the permission to the file hello as follows
 
 script that changes the mode of the file
 
+script that sets the mode of the file hello the same as olleh’s mode
