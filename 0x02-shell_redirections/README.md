@@ -41,3 +41,11 @@ Removes all letters c and C from input
 Reverse its input
 
 Displays all users and their home directories, sorted by userse
+
+Command that finds all empty files and directories in the current directory and all sub-directories
+
+Script that lists all the files with a .gif extension in the current directory and all its sub-directories
+
+Create a script that decodes acrostics that use the first letter of each line
+
+Write a script that parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests
