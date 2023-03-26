@@ -9,11 +9,11 @@ include stdlib
 file_line {'Password_auth':
   ensure => present,
   path   => '/etc/ssh/sshd_config',
-  line   => 'PasswordAuthentication no',
+  line   => '    PasswordAuthentication no',
 }
 
 file_line { 'Config_file':
   ensure => present,
   path   => '/etc/ssh/sshd_config',
-  line   => 'IdentityFile ~/.ssh/school',
+  line   => '    IdentityFile ~/.ssh/school',
 }
