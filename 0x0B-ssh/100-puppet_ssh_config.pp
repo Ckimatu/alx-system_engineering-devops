@@ -1,10 +1,10 @@
-i# using Puppet to make changes to our configuration file
+# using Puppet to make changes to our configuration file
 # SSH client configuration must be configured
 # to use the private key ~/.ssh/school
 # It must also be configured to
 # refuse to authenticate using a password
 
-file_line {'Turn off passwd authentication':
+file_line { 'Turn off passwd authentication':
   ensure => present,
   path   => '/etc/ssh/ssh_config',
   line   => '    PasswordAuthentication no',
