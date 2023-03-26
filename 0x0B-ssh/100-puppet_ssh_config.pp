@@ -1,17 +1,17 @@
-# using Puppet to make changes to our configuration file
+i# using Puppet to make changes to our configuration file
 # SSH client configuration must be configured
 # to use the private key ~/.ssh/school
 # It must also be configured to
 # refuse to authenticate using a password
 
-file_line {'Password_auth':
+file_line {'Turn off passwd authentication':
   ensure => present,
-  path   => '/etc/ssh/sshd_config',
+  path   => '/etc/ssh/ssh_config',
   line   => '    PasswordAuthentication no',
 }
 
-file_line { 'Config_file':
+file_line { 'Declare identity file':
   ensure => present,
-  path   => '/etc/ssh/sshd_config',
+  path   => '/etc/ssh/ssh_config',
   line   => '    IdentityFile ~/.ssh/school',
 }
