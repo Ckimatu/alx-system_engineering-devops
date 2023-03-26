@@ -4,6 +4,8 @@
 # It must also be configured to
 # refuse to authenticate using a password
 
+include stdlib
+
 file_line {'Password_auth':
   ensure => present,
   path   => '/etc/ssh/sshd_config',
