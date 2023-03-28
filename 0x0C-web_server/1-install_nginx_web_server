@@ -6,11 +6,8 @@
 # the string Hello World!
 # You can’t use systemctl for restarting nginx
 
-sudo apt-get install -y nginx
-sudo ufw allow 'Nginx HTTP'
-sudo mkdir -p /var/www/html
-sudo chown -R "$USER":"$USER" /var/www
-sudo chmod -R 755 /var/www
-sudo touch /var/www/html/index.html
+apt-get update
+apt-get -y install nginx
+ufw allow 'Nginx HTTP'
 echo "Hello World!" > /var/www/html/index.html
-sudo service nginx restart
+service nginx start
