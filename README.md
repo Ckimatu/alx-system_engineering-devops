@@ -2,4 +2,4 @@
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/Ckimatu/alx-system_engineering-devops)
 
-This repository contains projects on System engineering and Devops
+This repository contains projects on System engineering and DevOps
