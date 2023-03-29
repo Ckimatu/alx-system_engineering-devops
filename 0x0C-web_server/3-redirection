@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 # This file creates a redirection from the original site
 
-sudo apt-get install -y nginx
-echo "Hello World!" > /var/www/html/index.html
-sudo sed -i "s/server_name _;/server_name _;\n\trewrite ^\/redirect_me https:\/\/www.jw.org permanent;/" /etc/nginx/sites-available/default
+sudo sed -i '/server_name _;/a \	location /redirect_me {\n		return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n	}' /etc/nginx/sites-available/default
 sudo service nginx restart
