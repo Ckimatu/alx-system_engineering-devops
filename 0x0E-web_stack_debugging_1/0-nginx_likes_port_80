@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# delete existing /sites-enabled/default and replace it
+# with /sites-available/default by creating a symblolic link
+
+sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo service nginx restart
